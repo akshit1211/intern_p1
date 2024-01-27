@@ -6,13 +6,23 @@ import AddTodo from "./Components/AddTodo";
 import TodoList from "./Components/TodoList";
 
 export default function App() {
+  const todolist = [
+    {
+      name: "Computer",
+      desc: "Computer is a Electronic Device",
+    },
+    {
+      name: "Software",
+      desc: "Software is set of instruction",
+    },
+  ];
   return (
     <>
       <div className="shadow p-3 mb-5  rounded  bg-white container">
         <center>
           <Title />
           <AddTodo />
-          <TodoList />
+          <TodoList todolist={todolist} />
         </center>
       </div>
     </>
